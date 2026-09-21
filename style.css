@@ -1,0 +1,454 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1f4e79;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #1f4e79;
+}
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background-color: #f4f7fa;
+}
+
+
+.hero-content {
+    max-width: 800px;
+}
+
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+    color: #1f4e79;
+}
+
+
+.hero h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+.hero p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+.btn {
+    display: inline-block;
+
+    padding: 13px 30px;
+
+    background-color: #1f4e79;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #163a5a;
+    transform: translateY(-2px);
+}
+
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    color: #1f4e79;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #666;
+    font-size: 16px;
+}
+
+.about {
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 20px;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: 400px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.about-text h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-text p {
+    font-size: 17px;
+    color: #666;
+
+    margin-bottom: 15px;
+}
+
+.services {
+    background-color: #f4f7fa;
+    padding: 100px 20px;
+}
+
+.service-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.service-card {
+    background-color: white;
+
+    padding-bottom: 25px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.service-card img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+}
+
+.service-card h3 {
+    font-size: 24px;
+
+    margin: 20px 15px 10px;
+
+    color: #1f4e79;
+}
+
+.service-card p {
+    font-size: 15px;
+
+    color: #666;
+
+    padding: 0 20px;
+}
+
+.projects {
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 20px;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+.project-card {
+    background-color: #ffffff;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+
+    transition: all 0.3s ease;
+}
+
+
+
+.project-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+.project-card img {
+    width: 100%;
+    height: 230px;
+
+    object-fit: cover;
+}
+
+.project-card h3 {
+    font-size: 23px;
+
+    color: #1f4e79;
+
+    margin: 20px 20px 10px;
+}
+
+.project-card p {
+    color: #666;
+
+    font-size: 15px;
+
+    margin: 0 20px 25px;
+}
+
+.contact {
+    background-color: #f4f7fa;
+
+    padding: 100px 20px;
+
+    text-align: center;
+}
+
+.contact-info {
+    max-width: 600px;
+
+    margin: auto;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+.contact-info p {
+    margin: 15px 0;
+
+    color: #555;
+
+    font-size: 16px;
+}
+
+
+.contact-info strong {
+    color: #1f4e79;
+}
+
+footer {
+    background-color: #1f4e79;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px 20px;
+
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+
+    
+    .navbar {
+        height: auto;
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+
+    .hero {
+        min-height: 500px;
+
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+
+    
+    .about-content {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .about-image img {
+        height: 300px;
+    }
+
+
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+}
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .nav-links {
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+    .about-text h3 {
+        font-size: 25px;
+    }
+
+    .contact-info {
+        padding: 20px;
+    }
+
+}
+section {
+    scroll-margin-top: 80px;
+}
